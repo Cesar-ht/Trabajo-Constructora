@@ -27,7 +27,7 @@ app.use('/uploads', express.static(path.join(__dirname, '../uploads')));
 // Ruta para la raíz principal
 app.get('/', (req, res) => {
   res.json({
-    message: '🚀 Servidor funcionando correctamente',
+    message: 'Servidor funcionando correctamente',
     api: 'Visita /api para ver los endpoints disponibles',
     environment: process.env.NODE_ENV || 'development',
     timestamp: new Date().toISOString()

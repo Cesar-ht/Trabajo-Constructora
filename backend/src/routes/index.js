@@ -8,7 +8,7 @@ const router = express.Router();
 // Ruta para la raíz del API
 router.get('/', (req, res) => {
   res.json({
-    message: '✅ API funcionando correctamente',
+    message: 'API funcionando correctamente',
     timestamp: new Date().toISOString(),
     endpoints: {
       auth: '/api/auth',
